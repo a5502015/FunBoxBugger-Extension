@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8" />
+  <title>陀螺蹲點者</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <span class="header-icon">🎯</span>
+    <div>
+      <div class="header-title">陀螺蹲點者</div>
+      <div class="header-sub">FunBox 鍵盤庫存監測</div>
+    </div>
+    <div class="status-dot" id="statusDot" title="監測中"></div>
+    <span class="status-label" id="statusLabel">監測中</span>
+  </div>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button class="btn btn-primary" id="btnScrape">立即抓取</button>
+    <button class="btn btn-pause" id="btnPause">⏸ 暫停</button>
+    <div class="interval-group">
+      <span>每</span>
+      <input class="interval-input" id="intervalInput" type="number" min="1" max="60" value="3" />
+      <span>分鐘自動</span>
+    </div>
+  </div>
+
+  <!-- Alert -->
+  <div class="alert-banner" id="alertBanner">
+    <span>🛒</span>
+    <span id="alertText"></span>
+  </div>
+
+  <!-- Info bar -->
+  <div class="info-bar">
+    <span>📦 <span id="productCount">—</span> 件商品</span>
+    <span>⏱ 上次: <span id="lastChecked">尚未抓取</span></span>
+  </div>
+
+  <!-- Log -->
+  <div class="log-area" id="logArea">
+    <div class="log-empty">
+      <span class="icon">🔍</span>
+      點擊「立即抓取」<br>或等候自動排程觸發
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

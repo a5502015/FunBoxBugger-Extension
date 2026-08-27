@@ -118,6 +118,9 @@ async function runScrape() {
         message: `$${p.price}`
       }))
     });
+  } else {
+    // 沒有可購買商品 → 關閉分頁，避免殘留
+    chrome.tabs.remove(tab.id);
   }
 }
 

@@ -1,7 +1,8 @@
 {
   "manifest_version": 3,
   "name": "陀螺蹲點者 - FunBox 庫存監測",
-  "version": "1.0.1",
+  "version": "1.0.2",
+  "version_name": "V1.0.2b",
   "description": "自動監測 FunBox 商品庫存，有貨時立即桌面通知。",
   "icons": {
     "16": "icons/icon16.png",
